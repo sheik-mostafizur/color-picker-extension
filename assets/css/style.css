@@ -1,0 +1,71 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color_picker_popup {
+  width: 350px;
+}
+.color_picker_popup :where(.picker, header, .color, .all-colors) {
+  display: flex;
+  align-items: center;
+}
+
+.color_picker_popup .picker {
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: #e3f2fd;
+}
+
+#color_picker {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #5372f0;
+}
+
+.colors_picked {
+  margin: 10px 15px;
+}
+.colors_picked.hide{
+  display: none;
+}
+.colors_picked header {
+  justify-content: space-between;
+}
+.colors_picked .clear-all {
+  color: #5372f0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.all-colors {
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.all-colors .color {
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 3);
+}
+.all-colors .color .rect {
+  display: block;
+  height: 22px;
+  width: 22px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+.all-colors .color .value {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
